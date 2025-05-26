@@ -10,8 +10,8 @@ import fs from "fs";
 
 // Comment out the following two lines when deploying to Vercel (they're used only in local development or using es module)
 
- const __filename = fileURLToPath(import.meta.url);
- const __dirname = dirname(__filename);
+//  const __filename = fileURLToPath(import.meta.url);
+//  const __dirname = dirname(__filename);
 
 
 
