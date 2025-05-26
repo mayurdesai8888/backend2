@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "402923287053",
+    "project_id": "automs-database",
+    "storage_bucket": "automs-database.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402923287053:android:7002cd3a02543d7e64db44",
+        "android_client_info": {
+          "package_name": "com.automs.sensixtech"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvwUkyv-s5jTGf6PcuZcj0IosK3dTfGFw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
