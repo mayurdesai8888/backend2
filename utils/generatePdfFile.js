@@ -10,8 +10,8 @@ import fs from "fs";
 
 // Comment out the following two lines when deploying to Vercel (they're used only in local development or using es module)
 
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = dirname(__filename);
+ const __filename = fileURLToPath(import.meta.url);
+ const __dirname = dirname(__filename);
 
 
 
@@ -25,6 +25,7 @@ const generatePdf = async (data) => {
   try {
     // Launch Puppeteer (core in prod, full in dev)
     if (isProd) {
+      console.log("*************************11111111111111")
       const executablePath = await chromium.executablePath(
         "https://github.com/Sparticuz/chromium/releases/download/v133.0.0/chromium-v133.0.0-pack.tar"
       );
@@ -34,7 +35,9 @@ const generatePdf = async (data) => {
         headless: chromium.headless,
         defaultViewport: chromium.defaultViewport,
       });
+      console.log("*************************11111111111111");
     } else {
+      console.log("*************************2222222222*********");
       browser = await puppeteer.launch({
         headless: true,
         args: ["--no-sandbox", "--disable-setuid-sandbox"],

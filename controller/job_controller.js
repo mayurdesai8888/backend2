@@ -242,9 +242,9 @@ const saveJob = async (req, res) => {
         $inc: { jobCards: -1 },
       });
     }
-
+console.log("****@@@@@@@@@@@@@@***********")
     const newUrl = await generatePdfFile(newJob);
-
+    console.log("****@@@@@@@@@@@@@@***********");
     console.log("newUrl", newUrl);
     return res.status(201).json({
       message: "Job saved successfully",
